@@ -4,9 +4,7 @@
 		<meta charset="UTF-8">
 		<title>NHL Standings</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- We're not normalizing this HTML on purpose so that we can see some of the default table rendering - normalize addresses some of the table display issues -->
 		<link href="css/tables.css" rel="stylesheet" />
-		<!-- Thanks to Tristen Brown for the excellent (dependency-free) table sorting script -->
 		<script src="js/tablesort/tablesort.min.js"></script>
 		<link href="js/tablesort/css/tablesort.css" rel="stylesheet">
 		<script src="js/tables.js" defer></script>
@@ -17,11 +15,8 @@
 		<h1>NHL Standings</h1>
 	</header>
 	<main>
-<!-- STEP 1a: Start with the basic TABLE element -->
 		<table id="consoleData">
-<!-- STEP 2: Build out a fitting CAPTION element -->
 			<caption>National Hockey League</caption>
-<!-- STEP 4: Build out column groups and columns if necessary -->
 			<colgroup>
 				<col />
 				<col />
@@ -35,9 +30,6 @@
 				<col />
 				<col />
 			</colgroup>
-<!-- STEP 5a: Group the table heading rows with a THEAD -->
-
-<!-- STEP 1b: Build out the appropriate number of rows with TR -->
 			<thead>
 				<tr>
 					<th rowspan="2" scope="col">Teams</th>
@@ -221,18 +213,6 @@
 					<td colspan="17">Adapted from <a href="https://www.nhl.com/standings/2024-04-04/league">https://www.nhl.com/standings/2024-04-04/league</a></td>
 				</tr>
 			</tfoot>
-<!-- STEP 1c: For each piece of table data, build a TD -->
-
-
-<!-- STEP 3a: Where appropriate, replace any TD elements with table headings (TH) -->
-
-<!-- STEP 3b: Associate TH with data rows and/or columns -->
-
-<!-- STEP 5b: Move the table footer row(s) up to just below the THEAD and surround with a TFOOT -->
-
-<!-- STEP 5c: Encapsulate the remainder of the table data rows with the TBODY tags -->
-
-<!-- STEP 5d: Look at the rendering in the browser, then head to css/tables.css for the next step -->
 		</table>
 	</main>
 	<footer>
